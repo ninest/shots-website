@@ -10,7 +10,7 @@
         nuxt-link(:to="action.secondary.url").secondary {{ action.secondary.text }}
     
     .left
-      img(:src="require(`~/assets/images/${mainImage}`)")
+      img(:src="require(`~/assets/images/landing/${mainImage}`)")
 </template>
 
 <script>
@@ -46,9 +46,14 @@ export default {
   }
 
   .right {
+    
+    @include not-mobile-screen{margin-top: 3.5em;}
+
+
     grid-area: right;
     .title {
       h1 {
+        font-size: 3.8em;
         padding: 0; margin: 0;
       }
       .subtitle {

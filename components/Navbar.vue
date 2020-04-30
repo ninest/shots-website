@@ -1,5 +1,5 @@
 <template lang="pug">
-  nav
+  nav(:class="{ 'extended-width': extendedWidth }")
     .logo
       nuxt-link(to="/")
         img(src='~/assets/svg/logo.svg')
@@ -12,19 +12,30 @@
 
 <script>
 export default {
+  props: {
+    extendedWidth: {
+      default: false,
+      required: false,
+    }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 nav {
-  background-color: rgb(248, 248, 248);
-  border-bottom: 1px solid rgb(230, 230, 230);
+  background-color: #222222;
+  border-bottom: 1px solid #000000;
   display: flex;
 
   justify-content: space-between;
   align-items: center;
 
-  padding: calc(var(--dense-padding) * 1.5) var(--main-padding);
+  padding: calc(var(--dense-padding) * 1.5) var(--side-padding);
+  &.extended-width {
+    @include desktop-screen { 
+      padding: calc(var(--dense-padding) * 1.5) 10%;
+    }
+  }
 
   position: sticky;
   top: 0;
@@ -54,13 +65,15 @@ nav {
 
       &.highlight {
         // background-color: rgb(200, 200, 200);
-        background-color: rgba(0, 0, 0, .05);
+        background-color: #111;
+
+        border: 1px solid var(--border-color);
 
         &.features {
           border-radius: 9px 0 0 9px
         }
         &.install {
-          background-color: rgba(0, 0, 0, .15);
+          background-color: #000;
           border-radius: 0 9px 9px 0;
         }
       }

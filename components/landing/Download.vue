@@ -4,8 +4,8 @@
 
     .store-buttons
 
-      a(:href="download.ios.url" target="_blank")
-        img(:src="require(`~/assets/images/${download.ios.image}`)")
+      //- a(:href="download.ios.url" target="_blank")
+      //-   img(:src="require(`~/assets/images/${download.ios.image}`)")
       a(:href="download.android.url" target="_blank").android
         img(:src="require(`~/assets/images/${download.android.image}`)")
       //- a(href="") App Store

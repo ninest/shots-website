@@ -30,8 +30,8 @@ export default {
 footer {
   // same padding as main
   padding: calc(var(--extra-padding) *2) var(--side-padding);
-  border-bottom: 1px solid rgb(230, 230, 230);
-  border-top: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
 
   &.extended-width {
     @include desktop-screen { 
@@ -44,7 +44,14 @@ footer {
     display: flex;
 
     .each-link {
-      a { color: gray; }
+      a {
+        color: gray;
+
+        &:hover {
+          background-color: #000;
+          border-radius: calc(var(--border-radius) * 0.2);
+        }
+      }
     }
 
     .each-link + .each-link {

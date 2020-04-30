@@ -1,6 +1,6 @@
 <template lang="pug">
   Root
-    Navbar(v-if="showNavbar")
+    Navbar(v-if="showNavbar" :extendedWidth="extendedWidth")
 
     .wrapper
       main(:class="{ 'extended-width': extendedWidth }")

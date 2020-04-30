@@ -1,6 +1,6 @@
 ---
 title: Shots
-subtitle: Get drunk, and learn more about your friends
+subtitle: Get drunk, learn more your friends' secrets
 
 action:
   main:
@@ -23,7 +23,7 @@ download:
   title: Download
   android:
     image: badges/google_play.png
-    url: https://play.google.com/store/apps/details?id=com.themindstorm.nextbussg
+    url: https://play.google.com/store/apps/details?id=com.themindstorm.shots
   ios:
     image: badges/appstore.png
     url: https://apps.apple.com/my/app/nextbus-sg/id1509167028

@@ -62,6 +62,8 @@ export default {
     background-color: var(--container-color);
     border-radius: var(--border-radius);
 
+    border: 2px solid var(--border-color);
+
     h2 { margin: 0 }
 
     &:hover {
