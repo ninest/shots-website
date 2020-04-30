@@ -45,16 +45,16 @@ export default {
         content: siteConfig.desc
       },
       { name: "theme-color", hid: "theme-color", content: "#000000" },
-      { name: "twitter:title", content: "NextBus SG" },
-      { name: "twitter:description", content: "A bus timings and public transport app for Singapore, with extra features" },
-      { name: "twitter:image:src", content: "/social-preview.png" },
+      { name: "twitter:title", content: "Shots" },
+      { name: "twitter:description", content: "A game that gets you drunk" },
+      // { name: "twitter:image:src", content: "/social-preview.png" },
       { name: "twitter:site", content: "@themindstorm2" },
       { name: "twitter:card", content: "summary_large_image" },
 
-      { property: "og:title", content: "NextBus SG" },
-      { property: "og:description", content: "A bus timings and public transport app for Singapore, with extra features" },
-      { property: "og:image", content: "/wa-preview.png" },
-      { property: "og:url", content: "https://nextbus.now.sh/" },
+      { property: "og:title", content: "Shots" },
+      { property: "og:description", content: "A game that gets you drunk" },
+      // { property: "og:image", content: "/wa-preview.png" },
+      // { property: "og:url", content: "https://nextbus.now.sh/" },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
