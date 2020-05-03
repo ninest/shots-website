@@ -26,5 +26,5 @@ download:
     url: https://play.google.com/store/apps/details?id=com.themindstorm.shots
   ios:
     image: badges/appstore.png
-    url: https://apps.apple.com/my/app/nextbus-sg/id1509167028
+    url: https://apps.apple.com/my/app/shots-a-social-drinking-game/id1511015571
 ---
