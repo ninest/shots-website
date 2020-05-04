@@ -1,4 +1,4 @@
-# [Shots website](https://nextbus.now.sh/)
+# [Shots website](https://shotsapp.now.sh/)
 
 > Promotional website for the Shots iOS and Android app.
 
