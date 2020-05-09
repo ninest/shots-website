@@ -13,7 +13,7 @@
 Check out the repository for the app at [themindstorm/Shots](https://github.com/themindstorm/Shots).
 
 ## Gallery
-<!-- ![Web view](./readme-images/gallery/web1.png) -->
+![Web view](./readme-images/gallery/preview.png)
 
 ## Build Setup
 
@@ -22,7 +22,7 @@ Check out the repository for the app at [themindstorm/Shots](https://github.com/
 npm i
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+npm run dev
 ```
 
 If you've never used Nuxt, check out [the docs](https://nuxtjs.org).
