@@ -2,13 +2,14 @@
   .features
     h2(id="features") {{ features.title }}
 
-    .grid
+    .list
       div(
         v-for="f in features.list" :key="f.text"
-        v-bind:class="{dark: f.dark}"
+        :class="{'image-left': f.imageLeft}"
       ).each-feature 
         //- .graphic
-        img(:src="require(`~/assets/images/${f.image}`)")
+        img(:src="require(`~/assets/images/landing/${f.image}`)" :class="{'image-left': f.imageLeft}")
+        //- div(:class="{ className: data }")
         .text
           h3 {{ f.text }}
           .description {{ f.description }}
@@ -23,59 +24,64 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.features {
-  .grid {
+h2 {
+  visibility: hidden;
+}
+
+.list {
+  .each-feature {
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: var(--main-padding);
+    grid-template-columns: 1fr min-content;
+    grid-template-areas: "text image";
+    grid-gap: var(--large-padding);
+
+    // conditional to put image on left side
+    &.image-left {
+      grid-template-columns: min-content 1fr;
+      grid-template-areas: "image text";
+    }
+
+
+    // different layout for mobile
 
     @include mobile-screen {
-      grid-template-columns: 1fr; 
+      &, &.image-left {
+        grid-template-columns: 1fr;
+        grid-template-areas: "text"
+                             "image";
+      }
     }
 
-    .each-feature {
-      
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: var(--extra-padding);
+    img {
+      grid-area: image;
+      height: 70vh;
 
-      border-radius: var(--border-radius);
-
-      background-color: rgba(0, 0, 0, 0.05);
-
-      padding: var(--main-padding);
-
-      &.dark { color: white; background-color: black; 
-              .description { color: #aaa; }
+      // center image on mobile
+      @include mobile-screen {
+        height: 60vh;
+        margin: 0 auto;
       }
-
-      .text {
-        h3 { font-size: 1.4em; margin-top: 0; }
-        .description { font-size: 0.9em }
-
-        a {
-          display: inline-block;
-          color: unset;
-          text-decoration: unset;
-
-          margin-top: var(--main-padding);
-
-          border: 2px solid black;
-          padding: var(--dense-padding) calc(var(--dense-padding) * 3.5);
-          border-radius: var(--border-radius);
-        }
-      }
-
-      img {
-        width: 100%;
-        border-radius: calc(var(--border-radius) /2);
-      }
-
     }
+
+    .text {
+      grid-area: text;
+
+      // on desktop, center in vertically
+      @include not-mobile-screen {
+        margin: var(--large-padding);
+      }
+
+      h3 {
+        font-size: 2.0em;
+      }
+      .description {
+        font-size: 1.4em;
+      }
+    }
+
+
+    margin-bottom: var(--large-padding);
   }
-
-
-  margin-bottom: calc(var(--extra-padding) * 3);
 }
 </style>

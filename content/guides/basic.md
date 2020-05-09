@@ -11,3 +11,5 @@ Playing a game is super easy!
 3. Start playing! To dismiss the current card (or go to the next card), all you have to do is swipe the card away!
 
 We hope you enjoy the game!
+
+## Ways to play

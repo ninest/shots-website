@@ -15,9 +15,13 @@ mainImage: main.png
 features:
   title: Features
   list:
-    # - text: 
-    #   description:
-    #   image: 
+    - text: Unique challenges
+      description: Play with 100+ cards guarenteed to get you and your friends drunk
+      image: first.png
+    - text: Different packs to choose
+      description: Mix and max from over five different unique packs
+      image: packs.png
+      imageLeft: true
 
 download:
   title: Download

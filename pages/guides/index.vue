@@ -64,7 +64,7 @@ export default {
 
     border: 2px solid var(--border-color);
 
-    h2 { margin: 0 }
+    h2 { margin: 0; font-size: 1.8em; }
 
     &:hover {
       background-color: var(--container-color-hover);
