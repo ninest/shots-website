@@ -10,7 +10,7 @@
 <a href='https://apps.apple.com/my/app/shots-a-social-drinking-game/id1511015571'><img height="55" alt='Get it on app store' src='./readme-images/badges/appstore.png'/></a>
 <a href='https://play.google.com/store/apps/details?id=com.themindstorm.shots'><img height="55" alt='Get it on Google Play' src='./readme-images/badges/google_play.png'/></a>
 
-<!-- Check out the repository for the app at [themindstorm/NextBusSG](https://github.com/themindstorm/NextBusSG). -->
+Check out the repository for the app at [themindstorm/Shots](https://github.com/themindstorm/Shots).
 
 ## Gallery
 <!-- ![Web view](./readme-images/gallery/web1.png) -->
