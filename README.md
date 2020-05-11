@@ -7,7 +7,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![GitHub](https://img.shields.io/github/license/themindstorm/NextBusSg?style=flat-square)
 
-<a href='https://apps.apple.com/my/app/shots-a-social-drinking-game/id1511015571'><img height="55" alt='Get it on app store' src='./readme-images/badges/appstore.png'/></a>
+<a href='https://apps.apple.com/us/app/shots-a-party-game/id1511015571'><img height="55" alt='Get it on app store' src='./readme-images/badges/appstore.png'/></a>
 <a href='https://play.google.com/store/apps/details?id=com.themindstorm.shots'><img height="55" alt='Get it on Google Play' src='./readme-images/badges/google_play.png'/></a>
 
 Check out the repository for the app at [themindstorm/Shots](https://github.com/themindstorm/Shots).

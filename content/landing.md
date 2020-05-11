@@ -30,5 +30,5 @@ download:
     url: https://play.google.com/store/apps/details?id=com.themindstorm.shots
   ios:
     image: badges/appstore.png
-    url: https://apps.apple.com/my/app/shots-a-social-drinking-game/id1511015571
+    url: https://apps.apple.com/us/app/shots-a-party-game/id1511015571
 ---
